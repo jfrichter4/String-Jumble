@@ -1,7 +1,7 @@
 """
 stringjumble.py
 Author: <your name>
-Credit: <sources>
+Credit: https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/; 
 
 Assignment:
 
@@ -25,3 +25,16 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+JumbleAyah = input("Please enter a string of text (that bigger the better): " )
+def reverse(s): 
+  str = "" 
+  for i in s: 
+    str = i + str
+  return str
+print(reverse(JumbleAyah))
+
+words = JumbleAyah.split()
+newWords = [word[::-1] for word in words]
+newSentence = " ".join(newWords)
+return newSentence
+print(reverseWordSentence(JumbleAyah))
