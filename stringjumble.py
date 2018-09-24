@@ -32,9 +32,33 @@ def reverse(s):
     str = i + str
   return str
 print(reverse(JumbleAyah))
+print(reverseWordSentence(JumbleAyah))
 
+def reverseWords(input): 
+    JumbleAyah=JumbleAyah[-1::-1] 
+    output = ' '.join(JumbleAyah) 
+    return output 
+if __name__ == "__main__": 
+    print(reverseWords(JumbleAyah))
 words = JumbleAyah.split()
 newWords = [word[::-1] for word in words]
 newSentence = " ".join(newWords)
 return newSentence
 print(reverseWordSentence(JumbleAyah))
+"""
+words = []
+a = string
+voocoord = ""
+for c in a:
+    if c != '^':
+        word = word+c
+    elif: 
+        words.appen(word)
+        words = ""
+        
+words = JumbleAyah.split()
+newWords = [word[::-1] for word in words]
+newSentence = " ".join(newWords)
+return newSentence
+print(reverseWordSentence(JumbleAyah))
+"""
