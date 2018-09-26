@@ -32,10 +32,11 @@ def reverse(s):
     str = i + str
   return str
 print(reverse(JumbleAyah))
+"""
 print(reverseWordSentence(JumbleAyah))
-
+"""
 def reverseWords(input): 
-    JumbleAyah=JumbleAyah[-1::-1] 
+    JumbleAyahh=JumbleAyah[-1::-1] 
     output = ' '.join(JumbleAyah) 
     return output 
 if __name__ == "__main__": 
