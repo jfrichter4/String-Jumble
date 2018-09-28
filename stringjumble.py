@@ -49,7 +49,11 @@ def reverse(r):
         str = i + str
     return str
 print(reverse(newSentence))
-
+"""
+For #3, I'm trying to figure out how to do it. Each word has been flipped, but 
+that's it. How should I go about that? I'm trying to think of reasonable ways to
+go about this task... I'll be done by tonight.
+"""
 def reverseWords(input): 
     JumbleAyah=JumbleAyah[-1::-1] 
     newSEntence = " ".join(JumbleAyah)
