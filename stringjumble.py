@@ -40,13 +40,45 @@ def reverseWords(input):
     output = ' '.join(JumbleAyah) 
     return output 
 if __name__ == "__main__": 
-    print(reverseWords(JumbleAyah))
-words = JumbleAyah.split()
+    words = JumbleAyah.split()
 newWords = [word[::-1] for word in words]
 newSentence = " ".join(newWords)
-return newSentence
-print(reverseWordSentence(JumbleAyah))
+def reverse(r): 
+    str = "" 
+    for i in r: 
+        str = i + str
+    return str
+print(reverse(newSentence))
+
+def reverseWords(input): 
+    JumbleAyah=JumbleAyah[-1::-1] 
+    newSEntence = " ".join(JumbleAyah)
+    return output
+    def reverse(mm): 
+        str = "" 
+        for i in mm: 
+            str = i + str
+        return str
+        print(newSEntence)
+
 """
+...
+*temporarily\/
+def reverse(p): 
+    str = "" 
+    for i in p: 
+        str = i + str
+    return str
+def reverseWords(input): 
+    JumbleAyahh=JumbleAyah[-1::-1] 
+    output = ' '.join(JumbleAyah) 
+    return output 
+if __name__ == "__main__": 
+    words = JumbleAyah.split()
+newWords = [word[::-1] for word in words]
+newSEntence = " ".join(newWords)
+print(reverse(newWords))
+*temporarily/\
 words = []
 a = string
 voocoord = ""
