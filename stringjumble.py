@@ -1,7 +1,7 @@
 """
 stringjumble.py
-Author: <your name>
-Credit: https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/; 
+Author: Joe Richter
+Credit: https://www.geeksforgeeks.org/reverse-string-python-5-different-ways/; StackOverflow
 
 Assignment:
 
@@ -26,6 +26,7 @@ handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
 JumbleAyah = input("Please enter a string of text (that bigger the better): " )
+print("You entered " + ""+ JumbleAyah + ". Now jumble it:")
 def reverse(s): 
   str = "" 
   for i in s: 
@@ -49,11 +50,6 @@ def reverse(r):
         str = i + str
     return str
 print(reverse(newSentence))
-"""
-For #3, I'm trying to figure out how to do it. Each word has been flipped, but 
-that's it. How should I go about that? I'm trying to think of reasonable ways to
-go about this task... I'll be done by tonight.
-"""
 def reverseWords(input): 
     JumbleAyah=JumbleAyah[-1::-1] 
     newSEntence = " ".join(JumbleAyah)
@@ -64,38 +60,25 @@ def reverseWords(input):
             str = i + str
         return str
         print(newSEntence)
-
-"""
-...
-*temporarily\/
-def reverse(p): 
-    str = "" 
-    for i in p: 
-        str = i + str
-    return str
-def reverseWords(input): 
-    JumbleAyahh=JumbleAyah[-1::-1] 
-    output = ' '.join(JumbleAyah) 
-    return output 
-if __name__ == "__main__": 
-    words = JumbleAyah.split()
-newWords = [word[::-1] for word in words]
-newSEntence = " ".join(newWords)
-print(reverse(newWords))
-*temporarily/\
 words = []
-a = string
-voocoord = ""
-for c in a:
-    if c != '^':
-        word = word+c
-    elif: 
-        words.appen(word)
-        words = ""
-        
-words = JumbleAyah.split()
-newWords = [word[::-1] for word in words]
-newSentence = " ".join(newWords)
-return newSentence
-print(reverseWordSentence(JumbleAyah))
-"""
+letters = ""
+index = 0
+newWord = 1
+for i in JumbleAyah:
+   if i != " " and newWord == 0:
+       words[index] += i
+   elif newWord == 1:
+       words.append(i)
+       newWord = 0
+   else:
+       newWord = 1
+       index += 1
+   letters += i
+index = 0
+newWord = 1
+words2 = ""
+for i in words:
+   l = list(i)
+   words2 += "".join(l[len(l)::-1])
+   words2 += " "
+print(words2)
